@@ -96,7 +96,7 @@ body {
   
   #portfolio .portfolio-item .details {
     height: 260px;
-    background: #c22424;
+    background: black;
     display: table-cell;
     vertical-align: middle;
     opacity: 0;
@@ -112,12 +112,12 @@ body {
     -webkit-transform: translate3d(0, -15px, 0);
     transform: translate3d(0, -15px, 0);
     font-weight: 700;
-    color: #333333;
+    color: black;
   }
   
   #portfolio .portfolio-item .details span {
     display: block;
-    color: #666666;
+    color:black;
     font-size: 13px;
     transition: opacity 0.3s, -webkit-transform 0.3s;
     transition: transform 0.3s, opacity 0.3s;
