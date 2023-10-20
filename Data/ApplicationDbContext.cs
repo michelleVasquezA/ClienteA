@@ -10,5 +10,4 @@ public class ApplicationDbContext : IdentityDbContext
     {
     }
 
-    public DbSet<InscritosxVacante> DataInscritosxVacante { get; set; }
 }
