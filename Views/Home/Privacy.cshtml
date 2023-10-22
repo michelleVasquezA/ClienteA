@@ -3,19 +3,11 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 }
 <h1>@ViewData["Title"]</h1><br>
-<section id="portfolio">
-    <ul class="tabs">
-      <div class="container wow fadeInUp">
-        <div class="row">
-          <div style="text-align: center;">
-          </div>
-          <div class="col-lg-4 mx-auto">
-            <a class="portfolio-item" style="background-image: url(/Images/taller_ingles.png);" align="middle"> 
-              <div class="details" >
-                <span style="font-size: 19px;" >
-                    <div  class="card" style="border-radius: 20px; padding: 1rem 1rem; height:100%;">
+<div class="row">
+     <div class="col-lg-4 mx-auto">
+        <div  class="card" style="border-radius: 20px; padding: 1rem 1rem; height:100%;">
           <div class="card-body">
-            <h4>Datos del Menor</h4><hr>
+            <h4>Completar Datos</h4><hr>
             <form  class="row g-3">
               <div class="col-md-4">
                 <label class="control-label">DNI</label>
@@ -28,12 +20,12 @@
                 <span  class="text-danger"></span>
                 </div>
                 <div class="col-md-6">
-                <label class="control-label">Ap. Paterno</label>
+                <label class="control-label">Apellido Paterno</label>
                 <input class="form-control" />
                 <span  class="text-danger"></span>
                 </div>
                 <div class="col-md-6">
-                  <label class="control-label">Ap.Materno</label>
+                  <label class="control-label">Apellido Materno</label>
                 <input class="form-control" />
                 <span  class="text-danger"></span>
                 </div>
@@ -54,129 +46,79 @@
                     <option value="Musica">Musica</option>
                     <option value="Circo">Circo</option>
                   </select>
-                <!--<input type="number" class="form-control" />-->
                 <span  class="text-danger"></span>
                 </div>
                 <div class="col-md-12">
-                  <input type="submit" value="Inscribir Taller" class="btn btn-primary" />
+                  <label class="control-label">Voucher</label>
+                <input  type="file" class="form-control" />
+                <span class="text-danger"></span>
                 </div>
-                </form>
+                <div class="col-md-12">
+                  <input type="submit" value="Separar Vacante" class="btn btn-danger" />
+                </div>
+                </form><br>
+                <small>
+                <p>*Capacidad solo para los 10 primeros niños y los horarios estan sujetos a cambios por la coordinación.</p>
+                </small>
           </div>
         </div>
-                </span>
-              </div>
-            </a>
-          </div><!--OtroTaller-->
-          <div class="col-lg-4 mx-auto">
-            <a class="portfolio-item" style="background-color: red;" align="middle"> 
-              <div class="details" >
-                <span style="font-size: 19px;" >
-                    <div  class="card" style="border-radius: 20px; padding: 1rem 1rem; height:100%;">
-          <div class="card-body">
-            <h4>Datos del Menor</h4><hr>
-            <form  class="row g-3">
-              <div class="col-md-4">
-                <label class="control-label">DNI</label>
-                <input class="form-control" />
-                <span  class="text-danger"></span>
-                </div>
-                <div class="col-md-6">
-                  <label class="control-label">Nombres</label>
-                <input  class="form-control" />
-                <span  class="text-danger"></span>
-                </div>
-                <div class="col-md-6">
-                <label class="control-label">Apellido Paterno</label>
-                <input class="form-control" />
-                <span  class="text-danger"></span>
-                </div>
-                <div class="col-md-6">
-                  <label class="control-label">Apellido Materno</label>
-                <input class="form-control" />
-                <span  class="text-danger"></span>
-                </div>
-                <div class="col-md-3">
-                  <label class="control-label">Grado</label>
-                <input type="number" class="form-control" />
-                <span  class="text-danger"></span>
-                </div>
-                </form>
+      </div> 
+    <div class="col-lg-8 mx-auto">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner" style="height:100%">
+            <div class="carousel-item active">
+            <img src="/Images/circo.jpg" class="d-block w-100" alt="" style="height:500px;border-radius:20px;">
+            </div>
+            <div class="carousel-item">
+            <img src="/Images/ingles.jpg" class="d-block w-100" alt="" style="height:500px;border-radius:20px;">
+            </div>
+            <div class="carousel-item">
+            <img src="/Images/musica.jpg" class="d-block w-100" alt="" style="height:500px;border-radius:20px;">
+            </div>
           </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Atrás</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+        </button>
         </div>
-                </span>
-              </div>
-            </a>
-          </div><!--OtroTaller-->
-          <div class="col-lg-4 mx-auto">
-            <a class="portfolio-item" style="background-image: url(/Images/bienvenida.jpg);" align="middle"> 
-              <div class="details" >
-                <span style="font-size: 19px;" >
-                    <div  class="card" style="border-radius: 20px; padding: 1rem 1rem; height:100%;">
-          <div class="card-body">
-            <h4>Datos del Menor</h4><hr>
-            <form  class="row g-3">
-              <div class="col-md-4">
-                <label class="control-label">DNI</label>
-                <input class="form-control" />
-                <span  class="text-danger"></span>
-                </div>
-                <div class="col-md-6">
-                  <label class="control-label">Nombres</label>
-                <input  class="form-control" />
-                <span  class="text-danger"></span>
-                </div>
-                <div class="col-md-6">
-                <label class="control-label">Apellido Paterno</label>
-                <input class="form-control" />
-                <span  class="text-danger"></span>
-                </div>
-                <div class="col-md-6">
-                  <label class="control-label">Apellido Materno</label>
-                <input class="form-control" />
-                <span  class="text-danger"></span>
-                </div>
-                <div class="col-md-3">
-                  <label class="control-label">Grado</label>
-                <input type="number" class="form-control" />
-                <span  class="text-danger"></span>
-                </div>
-                </form>
-          </div>
-        </div>
-                </span>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </ul>
-</section><br>
+    </div>
+</div>
+<br>
 <div class="container">
       <div class="row">
         <div class="col-sm-4">
           <div id="carouselExampleControls" class="card" style="border-radius: 20px; padding: 1rem 1rem; height: 250px;">
           <div class="card-body">
-            <h2 class="card-title">Misión:</h2>
-            <p style="font-size: 19px;">“Alimentar el poder de lo posible, transformando los momentos cotidianos en algo más especial.”</p>
+            <h2 class="card-title">Objetivo:</h2>
+            <p style="font-size: 19px;">“El objetivo de la educación no es aumentar la cantidad de
+conocimiento, sino crear las posibilidades para que en un
+niño invente y descubra”</p>
           </div>
         </div>
         </div>
         <div class="col-sm-4">
          <div id="carouselExampleControls" class="card" style="border-radius: 20px; padding: 1rem 1rem; height: 250px;">
           <div class="card-body">
-            <h2 class="card-title">Visión:</h2>
-            <p style="font-size: 17px;">“Ser la empresa de pizzas número uno en el mundo y en todos los barrios.”</p>
+            <h2 class="card-title">Historia:</h2>
+            <p style="font-size: 17px;">21 años llevando una propuesta
+pedagógica activa y personalizada
+donde el juego cumple un rol principal
+en el aprendizaje de nuestros niños.</p>
           </div>
         </div>
        </div>
        <div class="col-sm-4">
          <div id="carouselExampleControls" class="card" style="border-radius: 20px; padding: 1rem 1rem; height: 250px;">
           <div class="card-body">
-            <h2 class="card-title">Valores:</h2>
-            <p style="font-size: 17px;">* Responsabilidad</p>
-            <p style="font-size: 17px;">* Superioridad</p>
-            <p style="font-size: 17px;">* Actitud</p>
-            <p style="font-size: 17px;">* Perfeccioanmiento Constante</p>
+            <h2 class="card-title">Protocolo de Bioseguridad:</h2>
+            <p style="font-size: 17px;">●Estación de lavado de manos</p>
+            <p style="font-size: 17px;">●Aplicación de alcohol en gel</p> 
+            <p style="font-size: 17px;">●Uso de espacios amplios y ventilados</p>
+            <p style="font-size: 17px;">●Aforos reducidos 10 niños por sala</p>
           </div>
       </div>
     </div>
