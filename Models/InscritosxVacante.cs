@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ClienteA.Models
 {
-    [Table("Inscritos_Vacante")]
+    [Table("Inscritos_Vacante2")]
     public class InscritosxVacante
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
